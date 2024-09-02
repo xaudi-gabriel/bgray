@@ -67,7 +67,7 @@ const Nabvar = () => {
             }}
             to="contact"
             smooth={true}
-            offset={0}
+            offset={-260}
             duration={500}
             className="btn"
           >
