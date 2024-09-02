@@ -12,7 +12,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "de9ae813-1b1a-4bac-9d66-fbd18435b0b3");
+    formData.append("access_key", import.meta.env.VITE_REACT_APP_EMAIL_TOKEN);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
