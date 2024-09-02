@@ -1,0 +1,52 @@
+.benefits {
+  margin: 80px auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.benefits img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+.benefit {
+  flex-basis: 31%;
+  position: relative;
+}
+.caption {
+  font-size: 14px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 15, 152, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  /* padding-top: 70%; */
+  transition: 0.4s;
+  text-align: center;
+  padding: 10px;
+}
+.benefit:hover .caption {
+  opacity: 1;
+  margin: 10px auto;
+}
+/* ---------- media query ---------- */
+@media (max-width: 650px) {
+  .benefits {
+    flex-direction: column;
+  }
+  .program {
+    flex-basis: 100%;
+    margin: 10px auto;
+  }
+}
