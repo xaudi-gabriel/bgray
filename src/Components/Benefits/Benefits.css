@@ -9,7 +9,6 @@
   width: 100%;
   border-radius: 10px;
   display: block;
-  margin: 10px auto;
 }
 .benefit {
   flex-basis: 31%;
@@ -31,21 +30,21 @@
   color: #fff;
   cursor: pointer;
   opacity: 0;
-  /* padding-top: 70%; */
+  padding-top: 70%;
   transition: 0.4s;
   text-align: center;
-  padding: 10px;
 }
 .benefit:hover .caption {
   opacity: 1;
-  margin: 10px auto;
+  padding-top: 0;
+  border-radius: 10px;
 }
 /* ---------- media query ---------- */
 @media (max-width: 650px) {
   .benefits {
     flex-direction: column;
   }
-  .program {
+  .benefit {
     flex-basis: 100%;
     margin: 10px auto;
   }

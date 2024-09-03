@@ -19,7 +19,17 @@ const Nabvar = () => {
 
   return (
     <nav className={`container ${sticky ? "light-nav" : ""}`}>
-      <img src={logo} alt="" className="logo" />
+      <Link
+        onClick={() => {
+          document.getElementById("menu-icon").click();
+        }}
+        to="hero"
+        smooth={true}
+        offset={0}
+        duration={500}
+      >
+        <img src={logo} alt="" className="logo" />
+      </Link>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           <Link
